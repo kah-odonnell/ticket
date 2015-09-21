@@ -116,7 +116,7 @@ def ticket(request,ticket_id):
 	except:
 		return _error_response(request,'ticket not found')
 
-	return _success_response(request,{'ticket_id':ticket.id,'name':ticket.name,'price':ticket.price,'event':ticket.event,'amount':ticket.amount})
+	return _success_response(request,{'ticket_id':ticket.id,'name':ticket.name,'price':ticket.price,'event':ticket.event.name,'amount':ticket.amount})
 
 
 def create_user(request):
