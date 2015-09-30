@@ -5,5 +5,5 @@
 *.png
 *.js
 *.sqlite3
-secrets.py
+**/secrets.py
 local_settings.py
