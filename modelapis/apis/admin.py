@@ -1,5 +1,5 @@
 from django.contrib import admin
-from ticket.models import UserProfile, Event, Purchase, Ticket
+from apis.models import UserProfile, Event, Purchase, Ticket
 from django.contrib.auth.models import User
 # Register your models here.
 

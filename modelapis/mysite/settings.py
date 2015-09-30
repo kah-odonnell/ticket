@@ -57,7 +57,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = secrets.DATABASES
+DATABASES = {
+    'default': {
+        'ENGINE': '', #'mysql.connector.django',
+        'NAME': '', #'cs4501',
+        'USER': '', #'www',
+        'PASSWORD': '', #'password',
+        'HOST': '', #'db',
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
