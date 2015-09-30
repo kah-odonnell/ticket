@@ -90,7 +90,7 @@ if not MYSQLDB:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'mysql.connector.django',
+            'ENGINE': 'django.db.backends.mysql',
             'NAME': 'cs4501',
             'USER': 'www',
             'PASSWORD': 'password',
